@@ -54,7 +54,7 @@ public class AccountsController {
   public String testApi() {
 	  return "Success";
   }
-  @PostMapping(path = "/transfer",consumes = MediaType.APPLICATION_JSON_VALUE)
+  @PostMapping(path = "/transfer-balance",consumes = MediaType.APPLICATION_JSON_VALUE)
   public String transferBalance(@RequestBody @Valid TransferMoneyUtil transferMoneyUtil){
 	  log.info("Transfering  ammount details {}", transferMoneyUtil);
 	  if(transferMoneyUtil.getTransferAmmount().intValue() < 0)

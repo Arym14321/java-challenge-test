@@ -1,7 +1,6 @@
 package com.db.awmd.domain;
 
 import java.math.BigDecimal;
-
 import javax.validation.constraints.NotNull;
 
 import lombok.Data;
